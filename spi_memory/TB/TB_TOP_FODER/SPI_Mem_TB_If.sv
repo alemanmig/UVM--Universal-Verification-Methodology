@@ -4,7 +4,7 @@
 // SPI Memory interface
 //////////////////////////////////////////////
 
-interface spi_i;
+interface SPI_Mem_TB_if;
  
     logic clk, rst, cs, miso;
     logic ready, mosi, op_done;
