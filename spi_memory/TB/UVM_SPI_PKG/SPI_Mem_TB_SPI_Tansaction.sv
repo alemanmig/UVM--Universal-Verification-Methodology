@@ -1,11 +1,11 @@
 //==============================================================
-// File: SPI_Mem_TB_Transaction.sv
+// File: SPI_Mem_TB_SPI_Transaction.sv
 // Description: SPI Transaction - SPI-MEMEMORY.
 //
 // Author: Grupo de Verificación
 //==============================================================
 
-class SPI_Mem_TB_Transaction extends uvm_sequence_item;
+class SPI_Mem_TB_SPI_Transaction extends uvm_sequence_item;
     randc logic [7:0] addr;
     rand logic [7:0] din;
          logic [7:0] dout;
@@ -35,7 +35,7 @@ class SPI_Mem_TB_Transaction extends uvm_sequence_item;
         `uvm_object_utils_end
   
  
-  function new(string name = "SPI_Mem_TB_Transaction");
+  function new(string name = "SPI_Mem_TB_SPI_Transaction");
     super.new(name);
   endfunction
  
