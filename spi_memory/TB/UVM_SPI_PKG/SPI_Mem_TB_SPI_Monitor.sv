@@ -5,23 +5,23 @@
 // Author: Grupo de Verificación
 //==============================================================
 
-class SPI_Mem_TB_SPI_Monitor extends uvm_monitor;
-`uvm_component_utils(SPI_Mem_TB_SPI_Monitor)
+class SPI_Mem_TB_Spi_Monitor extends uvm_monitor;
+`uvm_component_utils(SPI_Mem_TB_Spi_Monitor)
  
-uvm_analysis_port#(SPI_UVM_TB_SPI_Transaction) send;
-SPI_Mem_TB_SPI_Transaction tr;
+uvm_analysis_port#(SPI_UVM_TB_Spi_Transaction) send;
+SPI_Mem_TB_Spi_Transaction tr;
 SPI_Mem_TB_If sm_if;
 
 logic [15:0] din;
 logic [7:0] dout;
  
-    function new(input string inst = "SPI_Mem_TB_SPI_Monitor", uvm_component parent = null);
+    function new(input string inst = "SPI_Mem_TB_Spi_Monitor", uvm_component parent = null);
     super.new(inst,parent);
     endfunction
     
     virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
-    tr = SPI_Mem_TB_SPI_Transaction::type_id::create("tr");
+    tr = SPI_Mem_TB_Spi_Transaction::type_id::create("tr");
     send = new("send", this);
       if(!uvm_config_db#(virtual SPI_Mem_TB_If)::get(this,"","SPI_Mem_TB_If sm_if",sm_if))//uvm_test_top.env.agent.drv.aif
         `uvm_error("MON","Unable to access Interface");
