@@ -5,7 +5,7 @@
 // Author: Grupo de Verificación
 //==============================================================
 
-class SPI_Mem_TB_SPI_Transaction extends uvm_sequence_item;
+class SPI_Mem_TB_Spi_Transaction extends uvm_sequence_item;
     randc logic [7:0] addr;
     rand logic [7:0] din;
          logic [7:0] dout;
@@ -20,7 +20,7 @@ class SPI_Mem_TB_SPI_Transaction extends uvm_sequence_item;
          
   constraint addr_c { addr <= 10;}
  
-        `uvm_object_utils_begin(transaction)
+        `uvm_object_utils_begin(SPI_Mem_TB_Spi_Transaction)
         `uvm_field_int (addr,UVM_ALL_ON)
         `uvm_field_int (din,UVM_ALL_ON)
         `uvm_field_int (dout,UVM_ALL_ON)
@@ -35,7 +35,7 @@ class SPI_Mem_TB_SPI_Transaction extends uvm_sequence_item;
         `uvm_object_utils_end
   
  
-  function new(string name = "SPI_Mem_TB_SPI_Transaction");
+  function new(string name = "SPI_Mem_TB_Spi_Transaction");
     super.new(name);
   endfunction
  

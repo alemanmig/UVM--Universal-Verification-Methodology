@@ -1,26 +1,26 @@
 //==============================================================
-// File: SPI_Mem_TB_Driver.sv
+// File: SPI_Mem_TB_Spi_Driver.sv
 // Description: SPI Driver - SPI-MEMEMORY.
 //
 // Author: Grupo de Verificación
 //==============================================================
 
-class SPI_Mem_TB_SPI_Driver extends uvm_driver #(SPI_Mem_TB_SPI_Transaction);
+class SPI_Mem_TB_Spi_Driver extends uvm_driver #(SPI_Mem_TB_Spi_Transaction);
   `uvm_component_utils(SPI_Mem_TB_SPI_Drive)
   
   virtual SPI_Mem_TB_If sm_if;
-  transaction tr;
+  SPI_Mem_TB_Spi_transaction tr;
   logic [15:0] data; ////<- din , addr ->
   logic [7:0] datard;
   
   
-  function new(input string path = "SPI_Mem_TB_SPI_Drive", uvm_component parent = null);
+  function new(input string path = "SPI_Mem_TB_Spi_Drive", uvm_component parent = null);
     super.new(path,parent);
   endfunction
   
  virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
-     tr = SPI_Mem_TB_SPI_Transaction::type_id::create("tr");
+     tr = SPI_Mem_TB_Spi_Transaction::type_id::create("tr");
       
       if(!uvm_config_db#(virtual SPI_Mem_TB_If)::get(this,"","sm_if",sm_if))//uvm_test_top.env.agent.drv.aif
       `uvm_error("drv","Unable to access Interface");
