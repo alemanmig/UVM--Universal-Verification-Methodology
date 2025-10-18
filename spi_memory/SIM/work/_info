@@ -1,0 +1,63 @@
+m255
+K4
+z2
+!s11f vlog 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dd:/alemanmig_git/UVM--Universal-Verification-Methodology/spi_memory/SIM
+vspi_mem
+2../RTL/SPI_Mem.sv
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1760830576
+!i10b 1
+!s100 70z:EM[AkJ:Amg8Tz6nN<2
+Ib;<FU=IB]L_VM5?gT]GBk1
+S1
+R0
+w1760054350
+8../RTL/SPI_Mem.sv
+F../RTL/SPI_Mem.sv
+!i122 2
+L0 7 107
+VDg1SIo80bB@j0V0VzS_@n1
+Z3 OL;L;2024.1;79
+r1
+!s85 0
+31
+Z4 !s108 1760830576.000000
+!s107 ../RTL/SPI_Mem.sv|
+!s90 -reportprogress|300|-cover|bcest|../RTL/SPI_Mem.sv|
+!i113 0
+!s102 -cover bcest
+o-cover bcest -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z5 tCvgOpt 0
+XSPI_Mem_TB_Data_Types_pkg
+2../TB/TB_TOP_FOLDER/SPI_Mem_TB_Data_Types_pkg.svh
+R1
+R2
+!i10b 1
+!s100 G;^88Lie>@Nb7^9X]mP:N3
+I21gAooMH?<0;YhNfVXlnm1
+S1
+R0
+w1760151206
+8../TB/TB_TOP_FOLDER/SPI_Mem_TB_Data_Types_pkg.svh
+F../TB/TB_TOP_FOLDER/SPI_Mem_TB_Data_Types_pkg.svh
+!i122 3
+L0 9 0
+V21gAooMH?<0;YhNfVXlnm1
+R3
+r1
+!s85 0
+31
+R4
+!s107 ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Data_Types_pkg.svh|
+!s90 -reportprogress|300|../TB/TB_TOP_FOLDER/SPI_Mem_TB_Data_Types_pkg.svh|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+n@s@p@i_@mem_@t@b_@data_@types_pkg
