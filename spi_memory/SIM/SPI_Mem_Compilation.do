@@ -12,4 +12,4 @@ vlog -cover bcest ../RTL/SPI_Mem.sv
 #######################################################################################
 
 # TB files for compilation
-#vlog ../TB/TB_TOP_FOLDER/SoftErrorTol_GPIO_TB_Data_Types_pkg.svh
+vlog ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Data_Types_pkg.svh
