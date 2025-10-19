@@ -10,6 +10,7 @@
  package UVM_SPI_Mem_TB_Top_pkg;
  
    import uvm_pkg::*;
+   import SPI_Mem_TB_Data_Types_pkg::*;
    import UVM_SPI_Mem_TB_Spi_pkg::*;
    
    `include "SPI_Mem_TB_Scoreboard.sv"

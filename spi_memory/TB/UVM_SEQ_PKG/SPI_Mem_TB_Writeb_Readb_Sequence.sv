@@ -29,7 +29,7 @@ class SPI_Mem_TB_Writeb_Readb_Sequence extends uvm_sequence#(SPI_Mem_TB_Spi_Tran
         
     repeat(10)
       begin
-        tr = SPI_Mem_TB_Spi_Transactiontr::type_id::create("tr");
+        tr = SPI_Mem_TB_Spi_Transaction::type_id::create("tr");
         tr.addr_c.constraint_mode(1);
         start_item(tr);
         assert(tr.randomize);

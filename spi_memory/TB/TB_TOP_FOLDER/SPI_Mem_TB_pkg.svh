@@ -9,6 +9,6 @@
 
  package SPI_Mem_TB_pkg;
  
-  import UVM_SPI_Mem_Tests_pkg::*;
+  import UVM_SPI_Mem_TB_Tests_pkg::*;
   
  endpackage

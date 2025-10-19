@@ -17,6 +17,6 @@
     `include "SPI_Mem_TB_Read_Data_Sequence.sv"
     `include "SPI_Mem_TB_Rst_Dut_Sequence.sv"
     `include "SPI_Mem_TB_Write_Data_Sequence.sv"
-    `include "SPI_Mem_TB_Witeb_Readb_Sequence.sv"
+    `include "SPI_Mem_TB_Writeb_Readb_Sequence.sv"
 
   endpackage

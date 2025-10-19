@@ -39,4 +39,4 @@ class SPI_Mem_TB_Spi_Transaction extends uvm_sequence_item;
     super.new(name);
   endfunction
  
-endclass : transaction
+endclass : SPI_Mem_TB_Spi_Transaction

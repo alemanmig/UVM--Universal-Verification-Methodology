@@ -15,18 +15,19 @@ super.new(inst,parent);
 endfunction
  
  SPI_Mem_TB_Spi_Driver d;
+ SPI_Mem_TB_Spi_Monitor m; 
  uvm_sequencer#(SPI_Mem_TB_Spi_Transaction) seqr;
- SPI_Mem_TB_Spi_Mon m;
+
  
 virtual function void build_phase(uvm_phase phase);
 super.build_phase(phase);
-   cfg = SPI_Mem_TB_Config ::type_id::create("cfg"); 
-   m   = SPI_Mem_TB_Spi_Mon    ::type_id::create("m",this);
+   cfg = SPI_Mem_TB_Config         ::type_id::create("cfg"); 
+   m   = SPI_Mem_TB_Spi_Monitor    ::type_id::create("m",this);
   
   if(cfg.is_active == UVM_ACTIVE)
    begin   
    d = SPI_Mem_TB_Spi_Driver ::type_id::create("d",this);
-   seqr = uvm_sequencer#(transaction)::type_id::create("seqr", this);
+   seqr = uvm_sequencer#(SPI_Mem_TB_Spi_Transaction)::type_id::create("seqr", this);
    end
   
   

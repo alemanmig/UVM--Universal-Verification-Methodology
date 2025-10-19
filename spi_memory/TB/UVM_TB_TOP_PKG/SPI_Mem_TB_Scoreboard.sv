@@ -9,7 +9,7 @@
 class SPI_Mem_TB_Scoreboard extends uvm_scoreboard;
 `uvm_component_utils(SPI_Mem_TB_Scoreboard)
  
-  uvm_analysis_imp#(SPI_Mem_TB_Transaction,SPI_Mem_TB_Scoreboard) recv;
+  uvm_analysis_imp#(SPI_Mem_TB_Spi_Transaction,SPI_Mem_TB_Scoreboard) recv;
   bit [31:0] arr[32] = '{default:0};
   bit [31:0] addr    = 0;
   bit [31:0] data_rd = 0;
@@ -26,7 +26,7 @@ class SPI_Mem_TB_Scoreboard extends uvm_scoreboard;
     endfunction
     
     
-  virtual function void write(transaction tr);
+  virtual function void write(SPI_Mem_TB_Spi_Transaction tr);
     if(tr.op == rstdut)
               begin
                 `uvm_info("SCO", "SYSTEM RESET DETECTED", UVM_NONE);

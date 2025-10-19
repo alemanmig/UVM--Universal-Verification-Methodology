@@ -15,10 +15,10 @@ module SPi_Mem_TB_Top;
   spi_mem dut (.clk(sm_if.clk), .rst(sm_if.rst), .cs(sm_if.cs), .miso(sm_if.miso), .ready(sm_if.ready), .mosi(sm_if.mosi), .op_done(sm_if.op_done));
   
   initial begin
-    vif.clk <= 0;
+    sm_if.clk <= 0;
   end
  
-  always #10 sm_vif.clk <= ~sm_vif.clk;
+  always #10 sm_if.clk <= ~sm_if.clk;
  
   
  initial

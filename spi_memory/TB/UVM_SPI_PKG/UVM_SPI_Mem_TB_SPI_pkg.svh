@@ -12,6 +12,8 @@
  
   import uvm_pkg::*;
   import SPI_Mem_TB_Data_Types_pkg::*; 
+
+  `include "SPI_Mem_TB_Config.sv"  
   
   `include "SPI_Mem_TB_Spi_Transaction.sv"  
   typedef uvm_sequencer #(SPI_Mem_TB_Spi_Transaction) SPI_Mem_TB_Spi_Sequencer; 

@@ -12,7 +12,7 @@ Z0 dd:/alemanmig_git/UVM--Universal-Verification-Methodology/spi_memory/SIM
 vspi_mem
 2../RTL/SPI_Mem.sv
 Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z2 !s110 1760830576
+Z2 !s110 1760846044
 !i10b 1
 !s100 70z:EM[AkJ:Amg8Tz6nN<2
 Ib;<FU=IB]L_VM5?gT]GBk1
@@ -21,20 +21,20 @@ R0
 w1760054350
 8../RTL/SPI_Mem.sv
 F../RTL/SPI_Mem.sv
-!i122 2
+!i122 189
 L0 7 107
-VDg1SIo80bB@j0V0VzS_@n1
-Z3 OL;L;2024.1;79
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2024.1;79
 r1
 !s85 0
 31
-Z4 !s108 1760830576.000000
+Z5 !s108 1760846044.000000
 !s107 ../RTL/SPI_Mem.sv|
 !s90 -reportprogress|300|-cover|bcest|../RTL/SPI_Mem.sv|
 !i113 0
 !s102 -cover bcest
 o-cover bcest -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z5 tCvgOpt 0
+Z6 tCvgOpt 0
 XSPI_Mem_TB_Data_Types_pkg
 2../TB/TB_TOP_FOLDER/SPI_Mem_TB_Data_Types_pkg.svh
 R1
@@ -47,17 +47,286 @@ R0
 w1760151206
 8../TB/TB_TOP_FOLDER/SPI_Mem_TB_Data_Types_pkg.svh
 F../TB/TB_TOP_FOLDER/SPI_Mem_TB_Data_Types_pkg.svh
-!i122 3
+!i122 190
 L0 9 0
 V21gAooMH?<0;YhNfVXlnm1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Data_Types_pkg.svh|
 !s90 -reportprogress|300|../TB/TB_TOP_FOLDER/SPI_Mem_TB_Data_Types_pkg.svh|
 !i113 0
-o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R5
+Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
 n@s@p@i_@mem_@t@b_@data_@types_pkg
+YSPI_Mem_TB_If
+2../TB/TB_TOP_FOLDER/SPI_Mem_TB_If.sv
+R1
+Z8 !s110 1760846046
+!i10b 1
+!s100 CWjj=:?=1Ri<`XNg34=@o2
+I6L;VK=lQz`5_ofbbi8aV<1
+S1
+R0
+w1760831950
+8../TB/TB_TOP_FOLDER/SPI_Mem_TB_If.sv
+F../TB/TB_TOP_FOLDER/SPI_Mem_TB_If.sv
+!i122 196
+L0 7 0
+R3
+R4
+r1
+!s85 0
+31
+Z9 !s108 1760846046.000000
+!s107 ../TB/TB_TOP_FOLDER/SPI_Mem_TB_If.sv|
+!s90 -reportprogress|300|../TB/TB_TOP_FOLDER/SPI_Mem_TB_If.sv|+incdir+./../MISC|
+!i113 0
+R7
+Z10 !s92 +incdir+./../MISC -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+n@s@p@i_@mem_@t@b_@if
+XSPI_Mem_TB_pkg
+2../TB/TB_TOP_FOLDER/SPI_Mem_TB_pkg.svh
+R1
+Z11 DXx6 mtiUvm 7 uvm_pkg 0 22 MiVhEBb9cnBN5^J=<XBKI2
+Z12 DXx4 work 25 SPI_Mem_TB_Data_Types_pkg 0 22 21gAooMH?<0;YhNfVXlnm1
+Z13 DXx4 work 22 UVM_SPI_Mem_TB_Spi_pkg 0 22 S`4[g61AJ8>1<S:9mcUDg2
+Z14 DXx4 work 22 UVM_SPI_Mem_TB_Top_pkg 0 22 <k<:`B8=a<ebAVNZFXJ6m0
+Z15 DXx4 work 28 UVM_SPI_Mem_TB_Sequences_pkg 0 22 1Ch4anEcgZfTF;CDA6DNo3
+Z16 DXx4 work 24 UVM_SPI_Mem_TB_Tests_pkg 0 22 zoei06YPDn]X=VQGdQBe=1
+Z17 !s110 1760846045
+!i10b 1
+!s100 H`1B=Il73UZeW0ORQ^5Wl1
+Inhi:^Gf8En:LLl[<1UhzA3
+S1
+R0
+w1760845987
+8../TB/TB_TOP_FOLDER/SPI_Mem_TB_pkg.svh
+F../TB/TB_TOP_FOLDER/SPI_Mem_TB_pkg.svh
+!i122 195
+Z18 L0 10 0
+Vnhi:^Gf8En:LLl[<1UhzA3
+R4
+r1
+!s85 0
+31
+Z19 !s108 1760846045.000000
+!s107 ../TB/TB_TOP_FOLDER/SPI_Mem_TB_pkg.svh|
+!s90 -reportprogress|300|../TB/TB_TOP_FOLDER/SPI_Mem_TB_pkg.svh|
+!i113 0
+R7
+R6
+n@s@p@i_@mem_@t@b_pkg
+vSPi_Mem_TB_Top
+2../TB/TB_TOP_FOLDER/SPI_Mem_TB_Top.sv
+R1
+R11
+R12
+R13
+R14
+R15
+R16
+DXx4 work 14 SPI_Mem_TB_pkg 0 22 nhi:^Gf8En:LLl[<1UhzA3
+R8
+!i10b 1
+!s100 :Y>If]GJ1_a9mU82H`g493
+IS3mYZ`igEH4jaTPAjUSlk2
+S1
+R0
+w1760843141
+8../TB/TB_TOP_FOLDER/SPI_Mem_TB_Top.sv
+F../TB/TB_TOP_FOLDER/SPI_Mem_TB_Top.sv
+!i122 197
+L0 8 30
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|../TB/TB_TOP_FOLDER/SPI_Mem_TB_Top.sv|
+!s90 -reportprogress|300|../TB/TB_TOP_FOLDER/SPI_Mem_TB_Top.sv|+incdir+./../MISC|
+!i113 0
+R7
+R10
+R6
+n@s@pi_@mem_@t@b_@top
+XUVM_SPI_Mem_TB_Sequences_pkg
+2../TB/UVM_SEQ_PKG/UVM_SPI_Mem_TB_Sequences_pkg.svh
+R1
+R11
+R12
+R13
+R14
+R17
+!i10b 1
+!s100 jV[gB1k49EVdT>U91f><O3
+I1Ch4anEcgZfTF;CDA6DNo3
+S1
+R0
+w1760845096
+8../TB/UVM_SEQ_PKG/UVM_SPI_Mem_TB_Sequences_pkg.svh
+F../TB/UVM_SEQ_PKG/UVM_SPI_Mem_TB_Sequences_pkg.svh
+F../TB/UVM_SEQ_PKG/SPI_Mem_TB_Read_Data_Sequence.sv
+F../TB/UVM_SEQ_PKG/SPI_Mem_TB_Rst_Dut_Sequence.sv
+F../TB/UVM_SEQ_PKG/SPI_Mem_TB_Write_Data_Sequence.sv
+F../TB/UVM_SEQ_PKG/SPI_Mem_TB_Writeb_Readb_Sequence.sv
+!i122 193
+R18
+V1Ch4anEcgZfTF;CDA6DNo3
+R4
+r1
+!s85 0
+31
+R19
+!s107 ../TB/UVM_SEQ_PKG/SPI_Mem_TB_Writeb_Readb_Sequence.sv|../TB/UVM_SEQ_PKG/SPI_Mem_TB_Write_Data_Sequence.sv|../TB/UVM_SEQ_PKG/SPI_Mem_TB_Rst_Dut_Sequence.sv|../TB/UVM_SEQ_PKG/SPI_Mem_TB_Read_Data_Sequence.sv|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|../TB/UVM_SEQ_PKG/UVM_SPI_Mem_TB_Sequences_pkg.svh|
+!s90 -reportprogress|300|../TB/UVM_SEQ_PKG/UVM_SPI_Mem_TB_Sequences_pkg.svh|+incdir+./../MISC|+incdir+./../UVM_SEQ_PKG|
+!i113 0
+R7
+!s92 +incdir+./../MISC +incdir+./../UVM_SEQ_PKG -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+n@u@v@m_@s@p@i_@mem_@t@b_@sequences_pkg
+XUVM_SPI_Mem_TB_Spi_pkg
+2../TB/UVM_SPI_PKG/UVM_SPI_Mem_TB_Spi_pkg.svh
+!s115 SPI_Mem_TB_If
+R1
+R11
+R12
+R2
+!i10b 1
+!s100 i0^me@RcZN1dUm8U3XDH<0
+IS`4[g61AJ8>1<S:9mcUDg2
+S1
+R0
+w1760843980
+8../TB/UVM_SPI_PKG/UVM_SPI_Mem_TB_Spi_pkg.svh
+F../TB/UVM_SPI_PKG/UVM_SPI_Mem_TB_Spi_pkg.svh
+F./../TB/UVM_SPI_PKG/SPI_Mem_TB_Config.sv
+F./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Transaction.sv
+F./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv
+F./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv
+F./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Agent.sv
+!i122 191
+Z20 L0 11 0
+VS`4[g61AJ8>1<S:9mcUDg2
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Agent.sv|./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv|./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv|./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Transaction.sv|./../TB/UVM_SPI_PKG/SPI_Mem_TB_Config.sv|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|../TB/UVM_SPI_PKG/UVM_SPI_Mem_TB_Spi_pkg.svh|
+!s90 -reportprogress|300|../TB/UVM_SPI_PKG/UVM_SPI_Mem_TB_Spi_pkg.svh|+incdir+./../TB/UVM_SPI_PKG|
+!i113 0
+R7
+!s92 +incdir+./../TB/UVM_SPI_PKG -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+n@u@v@m_@s@p@i_@mem_@t@b_@spi_pkg
+XUVM_SPI_Mem_TB_Test_pkg_pkg
+Z21 2../TB/UVM_TEST_PKG/UVM_SPI_Mem_TB_Tests_pkg.svh
+R1
+R11
+R12
+R13
+R14
+R15
+!s110 1760845990
+!i10b 1
+!s100 Ob=m>ggUJ4dWz5bg^8XYP2
+IQ2=iE18z<gIzQOX0HHe7J2
+S1
+R0
+w1760845872
+Z22 8../TB/UVM_TEST_PKG/UVM_SPI_Mem_TB_Tests_pkg.svh
+Z23 F../TB/UVM_TEST_PKG/UVM_SPI_Mem_TB_Tests_pkg.svh
+Z24 F../TB/UVM_TEST_PKG/SPI_Mem_TB_Base_Test.sv
+Z25 F../TB/UVM_TEST_PKG/SPI_Mem_TB_Write_Data_Test.sv
+Z26 F../TB/UVM_TEST_PKG/SPI_Mem_TB_Read_Data_Test.sv
+Z27 F../TB/UVM_TEST_PKG/SPI_Mem_TB_Writeb_Readb_Test.sv
+Z28 F../TB/UVM_TEST_PKG/SPI_Mem_TB_Rst_Dut_Test.sv
+!i122 188
+R20
+VQ2=iE18z<gIzQOX0HHe7J2
+R4
+r1
+!s85 0
+31
+!s108 1760845990.000000
+Z29 !s107 ../TB/UVM_TEST_PKG/SPI_Mem_TB_Rst_Dut_Test.sv|../TB/UVM_TEST_PKG/SPI_Mem_TB_Writeb_Readb_Test.sv|../TB/UVM_TEST_PKG/SPI_Mem_TB_Read_Data_Test.sv|../TB/UVM_TEST_PKG/SPI_Mem_TB_Write_Data_Test.sv|../TB/UVM_TEST_PKG/SPI_Mem_TB_Base_Test.sv|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|../TB/UVM_TEST_PKG/UVM_SPI_Mem_TB_Tests_pkg.svh|
+Z30 !s90 -reportprogress|300|../TB/UVM_TEST_PKG/UVM_SPI_Mem_TB_Tests_pkg.svh|+incdir+./../TB/UVM_TESTS_PKG|
+!i113 0
+R7
+Z31 !s92 +incdir+./../TB/UVM_TESTS_PKG -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+n@u@v@m_@s@p@i_@mem_@t@b_@test_pkg_pkg
+XUVM_SPI_Mem_TB_Tests_pkg
+R21
+R1
+R11
+R12
+R13
+R14
+R15
+R17
+!i10b 1
+!s100 j9OPJD7NDi@I1XLkle9M_2
+Izoei06YPDn]X=VQGdQBe=1
+S1
+R0
+w1760846039
+R22
+R23
+R24
+R25
+R26
+R27
+R28
+!i122 194
+R20
+Vzoei06YPDn]X=VQGdQBe=1
+R4
+r1
+!s85 0
+31
+R19
+R29
+R30
+!i113 0
+R7
+R31
+R6
+n@u@v@m_@s@p@i_@mem_@t@b_@tests_pkg
+XUVM_SPI_Mem_TB_Top_pkg
+2../TB/UVM_TB_TOP_PKG/UVM_SPI_Mem_TB_Top_pkg.svh
+R1
+R11
+R12
+R13
+R17
+!i10b 1
+!s100 DLQ0idXXgYD^X<UT4QTN>1
+I<k<:`B8=a<ebAVNZFXJ6m0
+S1
+R0
+w1760844426
+8../TB/UVM_TB_TOP_PKG/UVM_SPI_Mem_TB_Top_pkg.svh
+F../TB/UVM_TB_TOP_PKG/UVM_SPI_Mem_TB_Top_pkg.svh
+F../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv
+F../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Env.sv
+!i122 192
+R18
+V<k<:`B8=a<ebAVNZFXJ6m0
+R4
+r1
+!s85 0
+31
+R5
+!s107 ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Env.sv|../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|../TB/UVM_TB_TOP_PKG/UVM_SPI_Mem_TB_Top_pkg.svh|
+!s90 -reportprogress|300|../TB/UVM_TB_TOP_PKG/UVM_SPI_Mem_TB_Top_pkg.svh|+incdir+./../MISC|+incdir+./../UVM_TB_TOP_PKG|
+!i113 0
+R7
+!s92 +incdir+./../MISC +incdir+./../UVM_TB_TOP_PKG -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+n@u@v@m_@s@p@i_@mem_@t@b_@top_pkg

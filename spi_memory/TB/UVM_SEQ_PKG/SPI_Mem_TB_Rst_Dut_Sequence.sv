@@ -8,7 +8,7 @@
 class SPI_Mem_TB_Rst_Dut_Sequence extends uvm_sequence#(SPI_Mem_TB_Spi_Transaction);
   `uvm_object_utils(SPI_Mem_TB_Rst_Dut_Sequence)
   
-  SPi_Mem_TB_Spi_Transaction tr;
+  SPI_Mem_TB_Spi_Transaction tr;
  
   function new(string name = "SPI_Mem_TB_Rst_Dut_Sequence");
     super.new(name);

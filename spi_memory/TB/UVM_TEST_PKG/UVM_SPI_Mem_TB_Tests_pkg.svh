@@ -8,7 +8,7 @@
 
 `include "uvm_macros.svh"
 
- package UVM_SPI_Mem_TB_Test_pkg_pkg;
+ package UVM_SPI_Mem_TB_Tests_pkg;
  
   import uvm_pkg::*;
   import UVM_SPI_Mem_TB_Top_pkg::*;
@@ -18,7 +18,7 @@
  
   `include "SPI_Mem_TB_Write_Data_Test.sv"
   `include "SPI_Mem_TB_Read_Data_Test.sv"
-  `include "SPI_MEM_TB_Writeb_Readb_Test.sv"
-  `include "SPI_Mem_Rst_Dut_Test.sv"
+  `include "SPI_Mem_TB_Writeb_Readb_Test.sv"
+  `include "SPI_Mem_TB_Rst_Dut_Test.sv"
   
  endpackage

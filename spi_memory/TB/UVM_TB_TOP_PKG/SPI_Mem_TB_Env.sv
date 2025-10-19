@@ -12,13 +12,13 @@ function new(input string inst = "SPI_Mem_TB_Env", uvm_component c);
 super.new(inst,c);
 endfunction
  
-SPI_Mem_TB_Agent a;
-SPI_MEM_TB_Socreboad s;
+SPI_Mem_TB_Spi_Agent a;
+SPI_Mem_TB_Scoreboard s;
  
 virtual function void build_phase(uvm_phase phase);
 super.build_phase(phase);
-  a = SPI_Mem_TB_Agent::type_id::create("a",this);
-  s = SPI_MEM_TB_Socreboad::type_id::create("s", this);
+  a = SPI_Mem_TB_Spi_Agent::type_id::create("a",this);
+  s = SPI_Mem_TB_Scoreboard::type_id::create("s", this);
 endfunction
  
 virtual function void connect_phase(uvm_phase phase);

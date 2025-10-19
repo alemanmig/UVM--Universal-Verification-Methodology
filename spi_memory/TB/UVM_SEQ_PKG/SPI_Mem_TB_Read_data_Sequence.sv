@@ -5,12 +5,12 @@
 // Author: Grupo de Verificación
 //==============================================================
 
-class SPI_Mem_TB_Read_Data extends uvm_sequence#(SPI_Mem_TB_Spi_Transaction);
-  `uvm_object_utils(SPI_Mem_TB_Read_Data)
+class SPI_Mem_TB_Read_Data_Sequence extends uvm_sequence#(SPI_Mem_TB_Spi_Transaction);
+  `uvm_object_utils(SPI_Mem_TB_Read_Data_Sequence)
   
   SPI_Mem_TB_Spi_Transaction tr;
  
-  function new(string name = "SPI_Mem_TB_Read_Data");
+  function new(string name = "SPI_Mem_TB_Read_Data_Sequence");
     super.new(name);
   endfunction
   

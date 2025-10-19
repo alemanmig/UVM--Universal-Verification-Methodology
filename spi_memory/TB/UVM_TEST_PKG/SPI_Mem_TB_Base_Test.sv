@@ -6,9 +6,9 @@
 //===============================================================
 
 
- class SPI_Mem_Base_Test extends uvm_test;
+ class SPI_Mem_TB_Base_Test extends uvm_test;
 
-  `uvm_component_utils(SPI_Mem_Base_Test)
+  `uvm_component_utils(SPI_Mem_TB_Base_Test)
  
   function new(string name = "SPI_Mem_Base_Test", uvm_component parent = null);
    super.new(name,parent);
@@ -19,7 +19,7 @@
   virtual function void build_phase(uvm_phase phase);
    super.build_phase(phase);
      
-	 e = SPIi_Mem_Env::type_id::create("env",this);
+	 e = SPI_Mem_TB_Env::type_id::create("env",this);
 
   endfunction
  

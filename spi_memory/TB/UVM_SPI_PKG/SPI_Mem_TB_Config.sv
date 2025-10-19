@@ -5,10 +5,10 @@
 // Author: Grupo de Verificación
 //==============================================================
 
-class spi_config extends uvm_object; /////configuration of env
-  `uvm_object_utils(spi_config)
+class SPI_Mem_TB_Config extends uvm_object; /////configuration of env
+  `uvm_object_utils(SPI_Mem_TB_Config)
   
-  function new(string name = "spi_config");
+  function new(string name = "SPI_Mem_TB_Config");
     super.new(name);
   endfunction
   
