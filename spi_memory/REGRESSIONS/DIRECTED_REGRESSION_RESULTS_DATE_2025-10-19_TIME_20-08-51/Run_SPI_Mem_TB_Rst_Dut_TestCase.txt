@@ -1,0 +1,148 @@
+# vsim -batch -t ps -coverage SPI_Mem_TB_Top "+UVM_TESTNAME=SPI_Mem_TB_Rst_Dut_TestCase" -logfile Run_SPI_Mem_TB_Rst_Dut_TestCase.txt -do "coverage save -onexit Coverage_SPI_Mem_TB_Rst_Dut_TestCase.ucdb" -do "run -all" 
+# Start time: 20:08:48 on Oct 19,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.SPI_Mem_TB_If(fast)
+# Loading work.spi_mem_pkg(fast)
+# Loading work.SPI_Mem_TB_Data_Types_pkg(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.UVM_SPI_Mem_TB_Spi_pkg(fast)
+# Loading work.UVM_SPI_Mem_TB_Top_pkg(fast)
+# Loading work.UVM_SPI_Mem_TB_Sequences_pkg(fast)
+# Loading work.UVM_SPI_Mem_TB_Tests_pkg(fast)
+# Loading work.SPI_Mem_TB_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.SPI_Mem_TB_Top(fast)
+# Loading work.SPI_Mem_sv_unit(fast)
+# Loading work.spi_mem(fast)
+# Loading work.SPI_Mem_TB_Assertions_sv_unit(fast)
+# Loading work.SPI_Mem_TB_Assertions(fast)
+# Loading D:/questasim64_2024.1/uvm-1.1d\win64\uvm_dpi.dll
+# 
+# coverage save -onexit Coverage_SPI_Mem_TB_Rst_Dut_TestCase.ucdb
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0.00us: reporter [RNTST] Running test SPI_Mem_TB_Rst_Dut_TestCase...
+# UVM_INFO ../TB/UVM_TEST_PKG/SPI_Mem_TB_Base_Test.sv(29) @ 0.00us: uvm_test_top [] Base Test
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# ** Error: FSM no vuelve a estado idle después del reset.
+#    Time: 10 ps Started: 10 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 31
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(37) @ 0.00us: uvm_test_top.env.a.d [DRV] System Reset
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 0.00us: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(39) @ 0.00us: uvm_test_top.env.a.m [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(32) @ 0.00us: uvm_test_top.env.s [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   52
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# []     1
+# [DRV]    15
+# [MON]    16
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCO]    16
+# [TEST_DONE]     1
+# ** Note: $finish    : D:/questasim64_2024.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 310 ps  Iteration: 54  Instance: /SPI_Mem_TB_Top
+# Saving coverage database on exit...
+# End time: 20:08:49 on Oct 19,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

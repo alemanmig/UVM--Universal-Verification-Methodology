@@ -1,0 +1,1591 @@
+# vsim -batch -t ps -coverage SPI_Mem_TB_Top "+UVM_TESTNAME=SPI_Mem_TB_Read_Data_TestCase" -logfile Run_SPI_Mem_TB_Read_Data_TestCase.txt -do "coverage save -onexit Coverage_SPI_Mem_TB_Read_Data_TestCase.ucdb" -do "run -all" 
+# Start time: 20:08:43 on Oct 19,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Top.sv(38): (vopt-2685) [TFMPC] - Too few port connections for 'SPI_Mem_SVA'.  Expected 9, found 7.
+# ** Warning: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Top.sv(38): (vopt-2718) [TFMPC] - Missing connection for port 'count'.
+# ** Warning: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Top.sv(38): (vopt-2718) [TFMPC] - Missing connection for port 'state'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.SPI_Mem_TB_If(fast)
+# Loading work.spi_mem_pkg(fast)
+# Loading work.SPI_Mem_TB_Data_Types_pkg(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.UVM_SPI_Mem_TB_Spi_pkg(fast)
+# Loading work.UVM_SPI_Mem_TB_Top_pkg(fast)
+# Loading work.UVM_SPI_Mem_TB_Sequences_pkg(fast)
+# Loading work.UVM_SPI_Mem_TB_Tests_pkg(fast)
+# Loading work.SPI_Mem_TB_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.SPI_Mem_TB_Top(fast)
+# Loading work.SPI_Mem_sv_unit(fast)
+# Loading work.spi_mem(fast)
+# Loading work.SPI_Mem_TB_Assertions_sv_unit(fast)
+# Loading work.SPI_Mem_TB_Assertions(fast)
+# Loading D:/questasim64_2024.1/uvm-1.1d\win64\uvm_dpi.dll
+# 
+# coverage save -onexit Coverage_SPI_Mem_TB_Read_Data_TestCase.ucdb
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0.00us: reporter [RNTST] Running test SPI_Mem_TB_Read_Data_TestCase...
+# UVM_INFO ../TB/UVM_TEST_PKG/SPI_Mem_TB_Base_Test.sv(29) @ 0.00us: uvm_test_top [] Base Test
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 10 ps Started: 10 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 30 ps Started: 10 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 50 ps Started: 30 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 70 ps Started: 50 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 90 ps Started: 70 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 110 ps Started: 90 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 130 ps Started: 110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 150 ps Started: 130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 170 ps Started: 150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 190 ps Started: 170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 210 ps Started: 190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 230 ps Started: 210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 250 ps Started: 250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 250 ps Started: 230 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 270 ps Started: 270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 270 ps Started: 250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 290 ps Started: 290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 290 ps Started: 270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 310 ps Started: 310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 310 ps Started: 290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 330 ps Started: 330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 330 ps Started: 310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 350 ps Started: 350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 350 ps Started: 330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 370 ps Started: 370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 370 ps Started: 350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.00us: uvm_test_top.env.a.d [DRV] DATA READ addr : 6 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.00us: uvm_test_top.env.a.m [MON] DATA READ addr:6 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.00us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:6, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 390 ps Started: 390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 390 ps Started: 370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 410 ps Started: 410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 410 ps Started: 390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 230 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 90 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 70 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 50 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 410 ps Started: 30 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 430 ps Started: 410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 450 ps Started: 430 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 470 ps Started: 450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 490 ps Started: 470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 510 ps Started: 490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 530 ps Started: 510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 550 ps Started: 530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 570 ps Started: 550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 590 ps Started: 570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 610 ps Started: 590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 630 ps Started: 610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 650 ps Started: 650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 650 ps Started: 630 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 670 ps Started: 670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 670 ps Started: 650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 690 ps Started: 690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 690 ps Started: 670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 710 ps Started: 710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 710 ps Started: 690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 730 ps Started: 730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 730 ps Started: 710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 750 ps Started: 750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 750 ps Started: 730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 770 ps Started: 770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 770 ps Started: 750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.00us: uvm_test_top.env.a.d [DRV] DATA READ addr : 10 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.00us: uvm_test_top.env.a.m [MON] DATA READ addr:10 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.00us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:10, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 790 ps Started: 790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 790 ps Started: 770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 810 ps Started: 810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 810 ps Started: 790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 630 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 810 ps Started: 430 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 830 ps Started: 810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 850 ps Started: 830 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 870 ps Started: 850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 890 ps Started: 870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 910 ps Started: 890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 930 ps Started: 910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 950 ps Started: 930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 970 ps Started: 950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 990 ps Started: 970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1010 ps Started: 990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1030 ps Started: 1010 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1050 ps Started: 1050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1050 ps Started: 1030 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1070 ps Started: 1070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1070 ps Started: 1050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1090 ps Started: 1090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1090 ps Started: 1070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1110 ps Started: 1110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1110 ps Started: 1090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1130 ps Started: 1130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1130 ps Started: 1110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1150 ps Started: 1150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1150 ps Started: 1130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1170 ps Started: 1170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1170 ps Started: 1150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.00us: uvm_test_top.env.a.d [DRV] DATA READ addr : 0 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.00us: uvm_test_top.env.a.m [MON] DATA READ addr:0 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.00us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:0, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1190 ps Started: 1190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1190 ps Started: 1170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1210 ps Started: 1210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1210 ps Started: 1190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 1210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 1190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 1170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 1150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 1130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 1110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 1090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 1070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 1050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 1030 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 1010 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1210 ps Started: 830 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1230 ps Started: 1210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1250 ps Started: 1230 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1270 ps Started: 1250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1290 ps Started: 1270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1310 ps Started: 1290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1330 ps Started: 1310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1350 ps Started: 1330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1370 ps Started: 1350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1390 ps Started: 1370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1410 ps Started: 1390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1430 ps Started: 1410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1450 ps Started: 1450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1450 ps Started: 1430 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1470 ps Started: 1470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1470 ps Started: 1450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1490 ps Started: 1490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1490 ps Started: 1470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1510 ps Started: 1510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1510 ps Started: 1490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1530 ps Started: 1530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1530 ps Started: 1510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1550 ps Started: 1550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1550 ps Started: 1530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1570 ps Started: 1570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1570 ps Started: 1550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.00us: uvm_test_top.env.a.d [DRV] DATA READ addr : 9 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.00us: uvm_test_top.env.a.m [MON] DATA READ addr:9 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.00us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:9, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1590 ps Started: 1590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1590 ps Started: 1570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1610 ps Started: 1610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1610 ps Started: 1590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1430 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 1610 ps Started: 1230 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1630 ps Started: 1610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1650 ps Started: 1630 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1670 ps Started: 1650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1690 ps Started: 1670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1710 ps Started: 1690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1730 ps Started: 1710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1750 ps Started: 1730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1770 ps Started: 1750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1790 ps Started: 1770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1810 ps Started: 1790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1830 ps Started: 1810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1850 ps Started: 1850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1850 ps Started: 1830 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1870 ps Started: 1870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1870 ps Started: 1850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1890 ps Started: 1890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1890 ps Started: 1870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1910 ps Started: 1910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1910 ps Started: 1890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1930 ps Started: 1930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1930 ps Started: 1910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1950 ps Started: 1950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1950 ps Started: 1930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1970 ps Started: 1970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1970 ps Started: 1950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.00us: uvm_test_top.env.a.d [DRV] DATA READ addr : 10 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.00us: uvm_test_top.env.a.m [MON] DATA READ addr:10 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.00us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:10, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 1990 ps Started: 1990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 1990 ps Started: 1970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2010 ps Started: 2010 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2010 ps Started: 1990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 2010 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1830 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2010 ps Started: 1630 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2030 ps Started: 2010 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2050 ps Started: 2030 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2070 ps Started: 2050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2090 ps Started: 2070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2110 ps Started: 2090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2130 ps Started: 2110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2150 ps Started: 2130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2170 ps Started: 2150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2190 ps Started: 2170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2210 ps Started: 2190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2230 ps Started: 2210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2250 ps Started: 2250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2250 ps Started: 2230 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2270 ps Started: 2270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2270 ps Started: 2250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2290 ps Started: 2290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2290 ps Started: 2270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2310 ps Started: 2310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2310 ps Started: 2290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2330 ps Started: 2330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2330 ps Started: 2310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2350 ps Started: 2350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2350 ps Started: 2330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2370 ps Started: 2370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2370 ps Started: 2350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.00us: uvm_test_top.env.a.d [DRV] DATA READ addr : 9 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.00us: uvm_test_top.env.a.m [MON] DATA READ addr:9 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.00us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:9, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2390 ps Started: 2390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2390 ps Started: 2370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2410 ps Started: 2410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2410 ps Started: 2390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2230 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2410 ps Started: 2030 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2430 ps Started: 2410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2450 ps Started: 2430 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2470 ps Started: 2450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2490 ps Started: 2470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2510 ps Started: 2490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2530 ps Started: 2510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2550 ps Started: 2530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2570 ps Started: 2550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2590 ps Started: 2570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2610 ps Started: 2590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2630 ps Started: 2610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2650 ps Started: 2650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2650 ps Started: 2630 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2670 ps Started: 2670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2670 ps Started: 2650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2690 ps Started: 2690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2690 ps Started: 2670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2710 ps Started: 2710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2710 ps Started: 2690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2730 ps Started: 2730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2730 ps Started: 2710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2750 ps Started: 2750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2750 ps Started: 2730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2770 ps Started: 2770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2770 ps Started: 2750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.00us: uvm_test_top.env.a.d [DRV] DATA READ addr : 3 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.00us: uvm_test_top.env.a.m [MON] DATA READ addr:3 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.00us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:3, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2790 ps Started: 2790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2790 ps Started: 2770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 2810 ps Started: 2810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2810 ps Started: 2790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2630 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 2810 ps Started: 2430 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2830 ps Started: 2810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2850 ps Started: 2830 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2870 ps Started: 2850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2890 ps Started: 2870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2910 ps Started: 2890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2930 ps Started: 2910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2950 ps Started: 2930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2970 ps Started: 2950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 2990 ps Started: 2970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3010 ps Started: 2990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3030 ps Started: 3010 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3050 ps Started: 3050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3050 ps Started: 3030 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3070 ps Started: 3070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3070 ps Started: 3050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3090 ps Started: 3090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3090 ps Started: 3070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3110 ps Started: 3110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3110 ps Started: 3090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3130 ps Started: 3130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3130 ps Started: 3110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3150 ps Started: 3150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3150 ps Started: 3130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3170 ps Started: 3170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3170 ps Started: 3150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.00us: uvm_test_top.env.a.d [DRV] DATA READ addr : 0 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.00us: uvm_test_top.env.a.m [MON] DATA READ addr:0 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.00us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:0, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3190 ps Started: 3190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3190 ps Started: 3170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3210 ps Started: 3210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3210 ps Started: 3190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 3210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 3190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 3170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 3150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 3130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 3110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 3090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 3070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 3050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 3030 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 3010 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 2990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 2970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 2950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 2930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 2910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 2890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 2870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 2850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3210 ps Started: 2830 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3230 ps Started: 3210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3250 ps Started: 3230 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3270 ps Started: 3250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3290 ps Started: 3270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3310 ps Started: 3290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3330 ps Started: 3310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3350 ps Started: 3330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3370 ps Started: 3350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3390 ps Started: 3370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3410 ps Started: 3390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3430 ps Started: 3410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3450 ps Started: 3450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3450 ps Started: 3430 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3470 ps Started: 3470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3470 ps Started: 3450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3490 ps Started: 3490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3490 ps Started: 3470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3510 ps Started: 3510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3510 ps Started: 3490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3530 ps Started: 3530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3530 ps Started: 3510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3550 ps Started: 3550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3550 ps Started: 3530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3570 ps Started: 3570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3570 ps Started: 3550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.00us: uvm_test_top.env.a.d [DRV] DATA READ addr : 3 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.00us: uvm_test_top.env.a.m [MON] DATA READ addr:3 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.00us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:3, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3590 ps Started: 3590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3590 ps Started: 3570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3610 ps Started: 3610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3610 ps Started: 3590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3430 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 3610 ps Started: 3230 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3630 ps Started: 3610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3650 ps Started: 3630 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3670 ps Started: 3650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3690 ps Started: 3670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3710 ps Started: 3690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3730 ps Started: 3710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3750 ps Started: 3730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3770 ps Started: 3750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3790 ps Started: 3770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3810 ps Started: 3790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3830 ps Started: 3810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3850 ps Started: 3850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3850 ps Started: 3830 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3870 ps Started: 3870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3870 ps Started: 3850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3890 ps Started: 3890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3890 ps Started: 3870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3910 ps Started: 3910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3910 ps Started: 3890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3930 ps Started: 3930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3930 ps Started: 3910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3950 ps Started: 3950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3950 ps Started: 3930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3970 ps Started: 3970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3970 ps Started: 3950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.00us: uvm_test_top.env.a.d [DRV] DATA READ addr : 7 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.00us: uvm_test_top.env.a.m [MON] DATA READ addr:7 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.00us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:7, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 3990 ps Started: 3990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 3990 ps Started: 3970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4010 ps Started: 4010 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4010 ps Started: 3990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 4010 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3830 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4010 ps Started: 3630 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4030 ps Started: 4010 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4050 ps Started: 4030 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4070 ps Started: 4050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4090 ps Started: 4070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4110 ps Started: 4090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4130 ps Started: 4110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4150 ps Started: 4130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4170 ps Started: 4150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4190 ps Started: 4170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4210 ps Started: 4190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4230 ps Started: 4210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4250 ps Started: 4250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4250 ps Started: 4230 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4270 ps Started: 4270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4270 ps Started: 4250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4290 ps Started: 4290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4290 ps Started: 4270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4310 ps Started: 4310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4310 ps Started: 4290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4330 ps Started: 4330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4330 ps Started: 4310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4350 ps Started: 4350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4350 ps Started: 4330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4370 ps Started: 4370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4370 ps Started: 4350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.00us: uvm_test_top.env.a.d [DRV] DATA READ addr : 5 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.00us: uvm_test_top.env.a.m [MON] DATA READ addr:5 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.00us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:5, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4390 ps Started: 4390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4390 ps Started: 4370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4410 ps Started: 4410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4410 ps Started: 4390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4230 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4410 ps Started: 4030 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4430 ps Started: 4410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4450 ps Started: 4430 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4470 ps Started: 4450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4490 ps Started: 4470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4510 ps Started: 4490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4530 ps Started: 4510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4550 ps Started: 4530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4570 ps Started: 4550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4590 ps Started: 4570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4610 ps Started: 4590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4630 ps Started: 4610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4650 ps Started: 4650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4650 ps Started: 4630 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4670 ps Started: 4670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4670 ps Started: 4650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4690 ps Started: 4690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4690 ps Started: 4670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4710 ps Started: 4710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4710 ps Started: 4690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4730 ps Started: 4730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4730 ps Started: 4710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4750 ps Started: 4750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4750 ps Started: 4730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4770 ps Started: 4770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4770 ps Started: 4750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.00us: uvm_test_top.env.a.d [DRV] DATA READ addr : 0 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.00us: uvm_test_top.env.a.m [MON] DATA READ addr:0 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.00us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:0, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4790 ps Started: 4790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4790 ps Started: 4770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 4810 ps Started: 4810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4810 ps Started: 4790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4630 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 4810 ps Started: 4430 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4830 ps Started: 4810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4850 ps Started: 4830 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4870 ps Started: 4850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4890 ps Started: 4870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4910 ps Started: 4890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4930 ps Started: 4910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4950 ps Started: 4930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4970 ps Started: 4950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 4990 ps Started: 4970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5010 ps Started: 4990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5030 ps Started: 5010 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5050 ps Started: 5050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5050 ps Started: 5030 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5070 ps Started: 5070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5070 ps Started: 5050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5090 ps Started: 5090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5090 ps Started: 5070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5110 ps Started: 5110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5110 ps Started: 5090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5130 ps Started: 5130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5130 ps Started: 5110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5150 ps Started: 5150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5150 ps Started: 5130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5170 ps Started: 5170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5170 ps Started: 5150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.01us: uvm_test_top.env.a.d [DRV] DATA READ addr : 0 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.01us: uvm_test_top.env.a.m [MON] DATA READ addr:0 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.01us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:0, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5190 ps Started: 5190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5190 ps Started: 5170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5210 ps Started: 5210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5210 ps Started: 5190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 5210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 5190 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 5170 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 5150 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 5130 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 5110 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 5090 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 5070 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 5050 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 5030 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 5010 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 4990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 4970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 4950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 4930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 4910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 4890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 4870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 4850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5210 ps Started: 4830 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5230 ps Started: 5210 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5250 ps Started: 5230 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5270 ps Started: 5250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5290 ps Started: 5270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5310 ps Started: 5290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5330 ps Started: 5310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5350 ps Started: 5330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5370 ps Started: 5350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5390 ps Started: 5370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5410 ps Started: 5390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5430 ps Started: 5410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5450 ps Started: 5450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5450 ps Started: 5430 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5470 ps Started: 5470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5470 ps Started: 5450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5490 ps Started: 5490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5490 ps Started: 5470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5510 ps Started: 5510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5510 ps Started: 5490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5530 ps Started: 5530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5530 ps Started: 5510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5550 ps Started: 5550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5550 ps Started: 5530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5570 ps Started: 5570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5570 ps Started: 5550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.01us: uvm_test_top.env.a.d [DRV] DATA READ addr : 7 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.01us: uvm_test_top.env.a.m [MON] DATA READ addr:7 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.01us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:7, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5590 ps Started: 5590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5590 ps Started: 5570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5610 ps Started: 5610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5610 ps Started: 5590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5590 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5570 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5550 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5530 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5510 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5490 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5470 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5450 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5430 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5410 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5390 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5370 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5350 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5330 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5310 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5290 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5270 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5250 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# ** Error: CS se desactivó antes de finalizar la operación SPI.
+#    Time: 5610 ps Started: 5230 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 100
+# [COVER] FSM vuelve a idle después de operación.
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5630 ps Started: 5610 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5650 ps Started: 5630 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5670 ps Started: 5650 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5690 ps Started: 5670 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5710 ps Started: 5690 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5730 ps Started: 5710 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5750 ps Started: 5730 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5770 ps Started: 5750 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5790 ps Started: 5770 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5810 ps Started: 5790 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5830 ps Started: 5810 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5850 ps Started: 5850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5850 ps Started: 5830 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5870 ps Started: 5870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5870 ps Started: 5850 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5890 ps Started: 5890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5890 ps Started: 5870 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5910 ps Started: 5910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5910 ps Started: 5890 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5930 ps Started: 5930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5930 ps Started: 5910 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5950 ps Started: 5950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5950 ps Started: 5930 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5970 ps Started: 5970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5970 ps Started: 5950 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Driver.sv(91) @ 0.01us: uvm_test_top.env.a.d [DRV] DATA READ addr : 1 dout : 0
+# UVM_INFO ./../TB/UVM_SPI_PKG/SPI_Mem_TB_Spi_Monitor.sv(85) @ 0.01us: uvm_test_top.env.a.m [MON] DATA READ addr:1 data:0 
+# UVM_INFO ../TB/UVM_TB_TOP_PKG/SPI_Mem_TB_Scoreboard.sv(44) @ 0.01us: uvm_test_top.env.s [SCO] DATA MATCHED : addr:1, rdata:0
+# ----------------------------------------------------------------
+# ** Error: ready activo fuera de los estados válidos.
+#    Time: 5990 ps Started: 5990 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 87
+# ** Error: FSM no pasó correctamente de idle a detect.
+#    Time: 5990 ps Started: 5970 ps  Scope: SPI_Mem_TB_Top.dut.SPI_Mem_SVA File: ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv Line: 47
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 0.01us: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   50
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# []     1
+# [DRV]    15
+# [MON]    15
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCO]    15
+# [TEST_DONE]     1
+# ** Note: $finish    : D:/questasim64_2024.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 6010 ps  Iteration: 54  Instance: /SPI_Mem_TB_Top
+# Saving coverage database on exit...
+# End time: 20:08:47 on Oct 19,2025, Elapsed time: 0:00:04
+# Errors: 714, Warnings: 3

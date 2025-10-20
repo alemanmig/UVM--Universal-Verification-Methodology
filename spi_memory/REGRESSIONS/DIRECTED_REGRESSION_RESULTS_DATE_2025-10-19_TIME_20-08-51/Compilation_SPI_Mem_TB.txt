@@ -1,0 +1,144 @@
+# 
+# do ../SIM/SPI_Mem_Compilation.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:08:41 on Oct 19,2025
+# vlog ../RTL/spi_mem_pkg.svh 
+# -- Compiling package spi_mem_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 20:08:41 on Oct 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:08:41 on Oct 19,2025
+# vlog -cover bcest ../RTL/SPI_Mem.sv 
+# -- Compiling package SPI_Mem_sv_unit
+# -- Importing package spi_mem_pkg
+# -- Compiling module spi_mem
+# 
+# Top level modules:
+# 	spi_mem
+# End time: 20:08:41 on Oct 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:08:41 on Oct 19,2025
+# vlog ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Data_Types_pkg.svh 
+# -- Compiling package SPI_Mem_TB_Data_Types_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 20:08:41 on Oct 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:08:41 on Oct 19,2025
+# vlog ../TB/UVM_SPI_PKG/UVM_SPI_Mem_TB_Spi_pkg.svh "+incdir+./../TB/UVM_SPI_PKG" 
+# ** Note: (vlog-2286) ../TB/UVM_SPI_PKG/UVM_SPI_Mem_TB_Spi_pkg.svh(9): Using implicit +incdir+D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package UVM_SPI_Mem_TB_Spi_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package SPI_Mem_TB_Data_Types_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 20:08:42 on Oct 19,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:08:42 on Oct 19,2025
+# vlog ../TB/UVM_TB_TOP_PKG/UVM_SPI_Mem_TB_Top_pkg.svh "+incdir+./../MISC" "+incdir+./../UVM_TB_TOP_PKG" 
+# ** Note: (vlog-2286) ../TB/UVM_TB_TOP_PKG/UVM_SPI_Mem_TB_Top_pkg.svh(8): Using implicit +incdir+D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package UVM_SPI_Mem_TB_Top_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package SPI_Mem_TB_Data_Types_pkg
+# -- Importing package UVM_SPI_Mem_TB_Spi_pkg
+# -- Importing package spi_mem_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 20:08:42 on Oct 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:08:42 on Oct 19,2025
+# vlog ../TB/UVM_SEQ_PKG/UVM_SPI_Mem_TB_Sequences_pkg.svh "+incdir+./../MISC" "+incdir+./../UVM_SEQ_PKG" 
+# ** Note: (vlog-2286) ../TB/UVM_SEQ_PKG/UVM_SPI_Mem_TB_Sequences_pkg.svh(8): Using implicit +incdir+D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package UVM_SPI_Mem_TB_Sequences_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package SPI_Mem_TB_Data_Types_pkg
+# -- Importing package UVM_SPI_Mem_TB_Spi_pkg
+# -- Importing package UVM_SPI_Mem_TB_Top_pkg
+# -- Importing package spi_mem_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 20:08:42 on Oct 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:08:42 on Oct 19,2025
+# vlog ../TB/UVM_TEST_PKG/UVM_SPI_Mem_TB_Tests_pkg.svh "+incdir+./../TB/UVM_TESTS_PKG" 
+# ** Note: (vlog-2286) ../TB/UVM_TEST_PKG/UVM_SPI_Mem_TB_Tests_pkg.svh(9): Using implicit +incdir+D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package UVM_SPI_Mem_TB_Tests_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package UVM_SPI_Mem_TB_Top_pkg
+# -- Importing package SPI_Mem_TB_Data_Types_pkg
+# -- Importing package UVM_SPI_Mem_TB_Spi_pkg
+# -- Importing package spi_mem_pkg
+# -- Importing package UVM_SPI_Mem_TB_Sequences_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 20:08:43 on Oct 19,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:08:43 on Oct 19,2025
+# vlog ../TB/TB_TOP_FOLDER/SPI_Mem_TB_pkg.svh 
+# -- Compiling package SPI_Mem_TB_pkg
+# -- Importing package UVM_SPI_Mem_TB_Tests_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package UVM_SPI_Mem_TB_Top_pkg
+# -- Importing package SPI_Mem_TB_Data_Types_pkg
+# -- Importing package UVM_SPI_Mem_TB_Spi_pkg
+# -- Importing package spi_mem_pkg
+# -- Importing package UVM_SPI_Mem_TB_Sequences_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 20:08:43 on Oct 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:08:43 on Oct 19,2025
+# vlog ../TB/TB_TOP_FOLDER/SPI_Mem_TB_If.sv "+incdir+./../RTL" "+incdir+./../MISC" 
+# -- Compiling interface SPI_Mem_TB_If
+# 
+# Top level modules:
+# 	--none--
+# End time: 20:08:43 on Oct 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:08:43 on Oct 19,2025
+# vlog ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Assertions.sv "+incdir+./../MISC" 
+# -- Compiling package SPI_Mem_TB_Assertions_sv_unit
+# -- Importing package spi_mem_pkg
+# -- Compiling module SPI_Mem_TB_Assertions
+# 
+# Top level modules:
+# 	SPI_Mem_TB_Assertions
+# End time: 20:08:43 on Oct 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:08:43 on Oct 19,2025
+# vlog ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Top.sv "+incdir+./../MISC" 
+# ** Note: (vlog-2286) ../TB/TB_TOP_FOLDER/SPI_Mem_TB_Top.sv(6): Using implicit +incdir+D:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling module SPI_Mem_TB_Top
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package spi_mem_pkg
+# -- Importing package SPI_Mem_TB_pkg
+# -- Importing package UVM_SPI_Mem_TB_Tests_pkg
+# -- Importing package UVM_SPI_Mem_TB_Top_pkg
+# -- Importing package SPI_Mem_TB_Data_Types_pkg
+# -- Importing package UVM_SPI_Mem_TB_Spi_pkg
+# -- Importing package UVM_SPI_Mem_TB_Sequences_pkg
+# 
+# Top level modules:
+# 	SPI_Mem_TB_Top
+# End time: 20:08:43 on Oct 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# quit -f
+# Errors: 0, Warnings: 0
