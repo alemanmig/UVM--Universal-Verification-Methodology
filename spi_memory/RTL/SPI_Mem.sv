@@ -3,20 +3,21 @@
 // File: spi_mem.sv
 //////////////////////
 
+import spi_mem_pkg::*;
 
 module spi_mem(
 input clk, rst, cs, miso,
 output reg ready, mosi, op_done
 );
  
+state_type state = idle;
+
 reg [7:0] mem [31:0] = '{default:0};
 integer count = 0;
 reg [15:0] datain;
 reg [7:0]  dataout;
  
-typedef enum bit [2:0] {idle = 0, detect = 1, store = 2, send_addr = 3, send_data = 4, temp_del = 5} state_type;
-state_type state = idle;
- 
+
 always@(posedge clk)
 begin
       if(rst) 

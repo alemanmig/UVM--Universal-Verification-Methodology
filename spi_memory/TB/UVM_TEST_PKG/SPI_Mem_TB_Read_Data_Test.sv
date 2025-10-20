@@ -5,10 +5,10 @@
 // Author: Grupo de Verificación
 //===============================================================
 
-class SPI_Mem_Read_Data_TestCase extends SPI_Mem_TB_Base_Test;
-  `uvm_component_utils(SPI_Mem_Read_Data_TestCase)
+class SPI_Mem_TB_Read_Data_TestCase extends SPI_Mem_TB_Base_Test;
+  `uvm_component_utils(SPI_Mem_TB_Read_Data_TestCase)
  
-  function new(input string inst = "SPI_Mem_Read_Data_TestCase", uvm_component c);
+  function new(input string inst = "SPI_Mem_TB_Read_Data_TestCase", uvm_component c);
    super.new(inst,c);
   endfunction
  

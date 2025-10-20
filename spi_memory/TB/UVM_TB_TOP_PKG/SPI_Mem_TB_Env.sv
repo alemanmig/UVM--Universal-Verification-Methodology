@@ -14,11 +14,13 @@ endfunction
  
 SPI_Mem_TB_Spi_Agent a;
 SPI_Mem_TB_Scoreboard s;
+SPI_Mem_TB_Cov_Collector c;
  
 virtual function void build_phase(uvm_phase phase);
 super.build_phase(phase);
   a = SPI_Mem_TB_Spi_Agent::type_id::create("a",this);
   s = SPI_Mem_TB_Scoreboard::type_id::create("s", this);
+  c = SPI_Mem_TB_Cov_Collector::type_id::create("c",this);
 endfunction
  
 virtual function void connect_phase(uvm_phase phase);

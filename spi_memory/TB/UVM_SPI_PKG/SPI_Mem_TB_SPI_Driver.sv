@@ -22,7 +22,7 @@ class SPI_Mem_TB_Spi_Driver extends uvm_driver #(SPI_Mem_TB_Spi_Transaction);
     super.build_phase(phase);
      tr = SPI_Mem_TB_Spi_Transaction::type_id::create("tr");
       
-      if(!uvm_config_db#(virtual SPI_Mem_TB_If)::get(this,"","sm_vif",sm_vif))//uvm_test_top.env.agent.drv.aif
+      if(!uvm_config_db#(virtual SPI_Mem_TB_If)::get(this,"","SPI_Mem_TB_If",sm_vif))//uvm_test_top.env.agent.drv.aif
       `uvm_error("drv","Unable to access Interface");
   endfunction
   

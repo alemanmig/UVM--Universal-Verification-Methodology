@@ -1,0 +1,18 @@
+BEGIN 3:SPI_Mem_TB_If:fast__1:work
+    op_done :  1:UVM_SPI_Mem_TB_Spi_pkg:fast:work
+    miso :  1:UVM_SPI_Mem_TB_Spi_pkg:fast:work
+    ready :  1:UVM_SPI_Mem_TB_Spi_pkg:fast:work
+    cs :  1:UVM_SPI_Mem_TB_Spi_pkg:fast:work
+    mosi :  1:UVM_SPI_Mem_TB_Spi_pkg:fast:work
+    clk :  1:UVM_SPI_Mem_TB_Spi_pkg:fast:work
+    rst :  1:UVM_SPI_Mem_TB_Spi_pkg:fast:work
+END 
+BEGIN 3:SPI_Mem_TB_If:fast__2:work
+    op_done :  1:SPI_Mem_TB_Top:fast:work
+    rst :  1:SPI_Mem_TB_Top:fast:work
+    miso :  1:SPI_Mem_TB_Top:fast:work
+    mosi :  1:SPI_Mem_TB_Top:fast:work
+    clk :  1:SPI_Mem_TB_Top:fast:work
+    cs :  1:SPI_Mem_TB_Top:fast:work
+    ready :  1:SPI_Mem_TB_Top:fast:work
+END 

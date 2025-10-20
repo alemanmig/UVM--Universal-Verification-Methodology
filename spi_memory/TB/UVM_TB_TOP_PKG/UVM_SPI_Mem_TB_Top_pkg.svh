@@ -15,7 +15,7 @@
    
    `include "SPI_Mem_TB_Scoreboard.sv"
 //   `include "SPI_Mem_TB_VSequencer.sv"
-//   `include "SPI_Mem_TB_Cov_Collector.sv"
+   `include "SPI_Mem_TB_Cov_Collector.sv"
    `include "SPI_Mem_TB_Env.sv"
    
  endpackage
